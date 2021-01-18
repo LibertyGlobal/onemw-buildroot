@@ -590,14 +590,14 @@ if (is_win) {
 
   if (!use_xcode) {
     default_warning_flags += [
-      "-Wno-implicit-float-conversion",
-      "-Wno-gnu-designator",
+      "-Wno-implicit-int-float-conversion",
+      "-Wno-c99-designator",
     ]
     if (!is_fuchsia) {
       default_warning_flags += [
-        "-Wno-return-type-c-linkage",
-        "-Wno-deprecated",
-        "-Wno-range-loop-analysis",
+        "-Wno-non-c-typedef-for-linkage",
+        "-Wno-deprecated-copy",
+        "-Wno-range-loop-construct",
       ]
     }
   }
