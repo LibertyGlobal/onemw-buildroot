@@ -611,6 +611,7 @@ if (is_win) {
 
   default_warning_flags += [
     "-Wno-psabi",
+    "-Wno-unknown-warning-option",
   ]
 }
 
