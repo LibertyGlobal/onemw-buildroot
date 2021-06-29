@@ -813,7 +813,7 @@ config("optimize") {
       lto_flags += [ "-flto" ]
     }
   } else {
-    cflags = [ "-O2" ] + common_optimize_on_cflags
+    cflags = [ "-Os" ] + common_optimize_on_cflags
   }
   ldflags = common_optimize_on_ldflags + lto_flags
   cflags += lto_flags
